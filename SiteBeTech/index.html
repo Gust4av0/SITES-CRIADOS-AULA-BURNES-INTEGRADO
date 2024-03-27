@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!--Diz qual é o tipo de documento-->
+<html lang="pt-br"> <!--Define o ínicio da página, o lang é a linguagem do texto que você irá escrever-->
+
+<head> <!--Vai ter algumas informações, cabeça do seu site com informações básicas-->
+    <title>BeTech</title> <!--Nome do Site-->
+    <meta charset="UTF-8"> <!--Conjunto de caracteres que ele vai ter, assento, cedilha.-->
+    <meta name="description" content="Site da BeTech Integrado">
+    <!--Tag para colocar a descrição do seu site, e o nome, não vai aparecer no site, mas quando você busca no Google ele aparece em baixo.-->
+    <link rel="stylesheet" href="css/style.css"> <!--Link para chamar a página de estilo CSS.-->
+    <link rel="shortcut icon" href="imagens/icone.png">
+    <!--Tag para colocar um ícone de atalho, exemplo: do lado do título-->
+</head>
+
+<body> <!--Elementos que irão aparecer na tela do site-->
+    <header> <!--Cabeçalho-->
+        <a href="index.html" title="Home BeTech">
+            <img src="imagens/logo-color.png" alt="Betech"> <!--Tag para imagem-->
+        </a>
+        <nav class="cabecalho">
+            <ul>
+                <li>
+                    <a href="#quem-somos" title="Quem Somos">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="#mentores" title="Mentores">Mentores</a>
+                </li>
+                <li>
+                    <a href="#parceiros" title="Parceiros">Parceiros</a>
+                </li>
+                <li>
+                    <a href="#contato" title="Contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!--Conteúdo principal-->
+        <section id="quem-somos"> <!--Tag para organizar as seções do seu site-->
+            <div class="centro"> <!--Tag para criar uma divisão, que os elementos abaixo, irão ficar dentro dela.-->
+                <h2>Sobre a BeTech</h2>
+                <img src="imagens/assespro.png" alt="BeTech+Assespro" title="BeTech+Assespro">
+                <p>
+                    A ASSESPRO, em parceria com a BeTech Integrado, está lançando o Programa de Desenvolvimento de
+                    Carreiras: um treinamento para<br>
+                    você desenvolver competências essenciais e desbloquear todo seu potencial.<br>
+
+                    As aulas são online e ao vivo, com mentores, que possuem experiência teórica e prática na área,
+                    prontos para impulsionarem seu sucesso.
+                </p>
+            </div>
+        </section>
+
+        <section id="mentores">
+            <div class="centro">
+                <h2>Mentores do Curso</h2>
+                <p>Conheça os mentores do curso.</p>
+                <div class="grid">
+                    <div class="coluna">
+                        <img src="imagens/profahelena.jpg" alt="Prof Helena" title="Prof Helena">
+                        <p>
+                            <strong>Profa. Helena da Silva</strong>
+                        </p>
+                        <p>
+                            Português
+                        </p>
+                    </div> <!--Fim da coluna-->
+
+                    <div class="coluna">
+                        <img src="imagens/profgirafales.jpg" alt="Prof Girafales" title="Prof Girafales">
+                        <p>
+                            <strong>Prof Girafales</strong>
+                        </p>
+                        <p>
+                            Matemática
+                        </p>
+                    </div><!--Fim da coluna2-->
+
+                    <div class="coluna">
+                        <img src="imagens/profraimundo.jpg" alt="Prof Raimundo" title="Prof Raimundo">
+                        <p>
+                            <strong>Prof Raimundo</strong>
+                        </p>
+                        <p>
+                            Ciências Ocultas
+                        </p>
+                    </div> <!--Fim da coluna3-->
+                    <div class="coluna">
+                        <img src="imagens/profxavier.jpg" alt="Prof Xavier" title="Prof Xavier">
+                        <p>
+                            <strong>Prof Xavier</strong>
+                        </p>
+                        <p>
+                            Ciências
+                        </p>
+                    </div> <!--Fim da coluna4-->
+
+                </div> <!--Fim da grid-->
+        </section>
+
+        <section id="parceiros">
+            <div class="centro">
+                <h2>Parceiros</h2>
+                <div class="grid">
+                    <div class="coluna">
+                        <img src="imagens/logo_coonectese.jpg" alt="Coonectese" title="Coonectese">
+                    </div> <!--Fim coluna-->
+
+                    <div class="coluna">
+                        <img src="imagens/logo_superpro.jpg" alt="Superpro" title="Superpro">
+                    </div> <!--Fim coluna2-->
+
+                    <div class="coluna">
+                        <img src="imagens/logo_uniti.jpg" alt="Uniti" title="Uniti">
+                    </div> <!--Fim coluna3-->
+
+                    <div class="coluna">
+                        <img src="imagens/logo_viptech.jpg" alt="Viptech" title="Viptech">
+                    </div> <!--Fim coluna4-->
+
+                </div> <!--Fim da grid-->
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="centro">
+                <h2>Entre em contato</h2>
+                <form name="FormContato"> <!--Definir o formulário-->
+                    <label for="nome">Digite seu nome completo:</label> <!--Texto que irá aparecer-->
+                    <input type="text" name="nome" id="nome" required> <!--Barra para inserir as informações-->
+                    <br>
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="10" required></textarea> <!--Texto maior-->
+                    <button type="submit">
+                        Enviar Formulário!
+                    </button>
+                </form>
+            </div>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.625109009891!2d-52.37864622487533!3d-24.04428177847095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed7538dd51de8b%3A0x5810a8087dbea91b!2sAv.%20Irm%C3%A3os%20Pereira%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1710292170733!5m2!1spt-BR!2sbr"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gustavo Marcolin Soares - Todos os Direitos Reservados!</p>
+    </footer>
+</body>
+
+</html>

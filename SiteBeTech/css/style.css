@@ -1,0 +1,105 @@
+/*CSS Reset*/
+* {
+    margin: 0; /*Retirar a margem externa*/
+    padding: 0; /*Retirar a margemin interna*/
+}
+
+header{
+    background-color: white; /*Tag cor de fundo*/
+    width: 100%; /*Tag largura*/
+    box-shadow: 0 0 10px #CCC; /*Tag para sombra*/
+    position: fixed;
+    top: 0;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    list-style: none;/*Retirar a bolinha do li*/
+}
+header nav ul li {
+    display: inline-block; /*Retirar a bolinha do li*/
+    margin: 25px; /*Margim entre os elementos*/
+    text-transform: uppercase; /*Deixar o texto tudo maiúsulo*/
+    font-size: 20px;
+    font-weight: bold; /*Deixar as fontes em negrito*/
+}
+header nav ul li a {
+    text-decoration: none;
+    color: gray;
+}
+header nav ul li a:hover {
+    color: black;
+}
+.centro {
+    width: 1000px; /*Tag largura, maioria das telas 1000 pixels*/
+    margin: auto; /*Tag para centralizar*/
+}
+html {
+    scroll-behavior: smooth; /*Comportamento do scrool, descer a página*/
+}
+/*Formatar o corpo*/
+body {
+    font-family: Arial, Verdana;
+    font-size: 16px; 
+}
+h2 {
+    text-align: center; /*Alinha texto ao Centro*/
+    text-transform: uppercase; /*Ele obriga o texto a se transformar, maiúsculo e minúsculo*/
+    font-size: 32px;
+}
+
+/*Configurar id mentores*/
+#mentores, #contato {
+   background-color: #f1f1f1;
+}
+
+section {
+    padding-top: 150px; /*Espaço em cima do objeto*/
+    padding-bottom: 150px; /*Espaço em baixo do objeto*/
+}
+
+.grid {
+    display: grid; /*Aplicar a grid*/
+    grid-template-columns: 25% 25% 25% 25%; /*Tamanho das colunas, quantas colunas deve ter*/
+}
+
+.grid .coluna {
+    box-shadow: 0 0 10px #CCC; /*Sombra*/
+    border-radius: 10px; /*Borda*/
+    margin: 10px; /*margin externa*/
+}
+
+.grid .coluna img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.grid .coluna p, #mentores p {
+    margin: 15px;
+    text-align: center;
+}
+input, textarea {
+    width: 100%; /*Largura*/
+    border: 2px solid #CCC; /*Borda*/
+    padding: 10px; /*Largura interna*/
+    box-sizing: border-box; /*Retirar os 20px dos 100% do width*/
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold; /*Deixar o texto em negrito*/
+    margin-bottom: 10px;
+    display: block;
+}
+button {
+    background-color: greenyellow;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
