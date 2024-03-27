@@ -1,0 +1,30 @@
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 18px Inter, Arial;
+    color: #333;
+}
+.header {
+    background: #fff; /*Cor do Fundo*/
+    width: 100%; /*Largura*/
+    position: fixed; /*Fixar cabeçalho ao topo*/
+    top: 0; /*Fixar cabeçalho ao topo*/
+    box-shadow: 0 0 10px #CCC; /*Sombra*/
+    padding: 10px; /*Margin interna*/
+    box-sizing: border-box; /*Para não aumentar o tamanho do padding*/
+}
+.header .header-logo img {
+    width: 350px;
+}
+.header .header-menu {
+    border: 1px solid #333; /*Borda = Tamanho, tipo e cor*/
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    float: right; /*Empurrar elemento para direita*/
+    margin-top: 25px;
+    border-radius: 5px; /*Arredondar borda*/
+}
