@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Raleway, Arial;
+    font-size: 16px;
+}
+header {
+    width: 100%;
+    background: #FFCB00;
+    padding: 10px; /*Margem dentro*/
+    box-sizing: border-box; /*Não ficar maior que a tela*/
+    display: inline-block; /*Ficar no tamanho certo da tela*/
+}
+header nav { /*Formatar o menu*/
+    float: right;
+}
+header nav ul {
+    list-style: none; /*Retirar bolinha da lista*/ 
+}
+header nav ul li {
+    display: inline-block; /*Deixar itens um ao lado do outro*/
+    margin: 15px; /*Marge entre os itens*/
+}
+header nav ul li a {
+    text-decoration: none; /*Retirar sublinhado e efeitos*/
+    color: #FFF;
+    text-transform: uppercase; /*Deixar texto tudo maiúsculo*/
+}
+header nav ul li a:hover {
+    color: blue;
+    transition: all 0.5s; /*Efeito de transição quando passar o mouse*/
+}
+.banner img {
+    width: 100%;
+}
+main h1, footer p {
+    text-align: center;
+}
+main {
+    width: 1000px;
+    margin: auto; /*Deixa a esquerda e direita com o mesmo tamanho*/
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%); /*Eu falo quantas colunas eu quero e qual a porcentagem*/
+}
+.grid .coluna img { /*Irá formatar a imagem que está dentro das colunas da grid, deixar com 100% dos 33% da grid template*/
+    width: 100%;
+}
+.grid .coluna {
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin: 10px;
+}
+.btn { /*Botões*/
+    background: #FFCB00;
+    text-decoration: none;
+    padding: 5px 30px; /*Irá colocar largura cima e baixo*/
+    color: blue;
+    border-radius: 150px;
+    transition: all 0.5s;
+}
+.btn:hover {
+    color: #FFCB00;
+    background: blue;
+}
+footer {
+    background-color: #FFCB00;
+    padding: 20px 0;
+}
+footer p {
+    color: white;
+    text-transform: uppercase;
+}
