@@ -25,22 +25,90 @@
             <img src="images/logo.png" alt="Logo Ren a Car">
         </a>
 
-        <a href="#" title="Menu" class="header-menu"> <!--Botão Menu-->
+        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu"> <!--Botão Menu-->
             <i class="fa-solid fa-bars"></i> <!--Ícone de BARS-->
         </a>
 
         <nav class="header-nav"> <!--Barra de navegação-->
             <ul>
                 <li>
-                    <a href="index.html" title="Home"> 
+                    <a href="index.html" title="Home">
                         <i class="fa-solid fa-house"></i> <!--Ícone de Home-->
                         Página Inicial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="quemsomos.html" title="Quem Somos">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Quem Somos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="aplicativo.html" title="Contato">
+                        <i class="fa-solid fa-mobile"></i>
+                        Aplicativo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html" title="Contato">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contato
                     </a>
                 </li>
             </ul>
         </nav>
 
     </header>
+
+    <section class="banner">
+        <div class="flex">
+            <div class="flex-col">
+                <h2>Quer locar um carro?</h2>
+                <p>Utilize o Rent a Car</p>
+                <p>
+                    <a href="aplicativo.html" title="Saiba Mais" class="btn">
+                        <i class="fa-solid fa-search"></i>
+                        Saiba mais sobre
+                    </a>
+                </p>
+            </div>
+            <div class="flex-col desktop">
+                <img src="images/app.png" alt="Aplicativo">
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h1>Selecione o seu Tipo de Veículo:</h1>
+        <div class="flex">
+            <div class="flex-col">
+                <img src="images/veiculo.png" alt="Veículo Padrão" title="Veículo Padrão">
+                <p>
+                    <strong>Veículo Padrão</strong>
+                </p>
+                <p>
+                    À partir de R$69,90 diária
+                </p>
+                <p>
+                    <a href="veiculopadrao.html" title="Detalhes" class="btn">
+                        <i class="fa-solid fa-search"></i>
+                        Detalhes
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function mostrarMenu() {
+            var menu = document.querySelector(".header-nav") //Guardar o elemento html para adicionar a classe
+            menu.classList.toggle("show"); //pega uma classe - toggle troca .show
+        }
+    </script>
+
 </body>
 
 </html>

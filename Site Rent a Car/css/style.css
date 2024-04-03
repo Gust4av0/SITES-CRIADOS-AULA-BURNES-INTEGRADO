@@ -6,6 +6,7 @@
 body {
     font: 18px Inter, Arial;
     color: #333;
+    padding-top: 100px;
 }
 .header {
     background: #fff; /*Cor do Fundo*/
@@ -17,7 +18,7 @@ body {
     box-sizing: border-box; /*Para não aumentar o tamanho do padding*/
 }
 .header .header-logo img {
-    width: 350px;
+    width: 300px;
 }
 .header .header-menu {
     border: 1px solid #333; /*Borda = Tamanho, tipo e cor*/
@@ -27,4 +28,83 @@ body {
     float: right; /*Empurrar elemento para direita*/
     margin-top: 25px;
     border-radius: 5px; /*Arredondar borda*/
+}
+.header .header-nav ul li {
+    margin: 15px;
+}
+.header .header-nav ul li a {
+    text-decoration: none;
+    color: #CCC;
+}
+.header .header-nav ul {
+    list-style: none; /*Retirar bolinha dos itens da lista*/
+}
+.header .header-nav {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+.banner {
+    /*Imagem de Fundo*/
+    background: url(../images/top.jpg) bottom; /*Bottom = irá começar a mostra de baixo para cima*/
+    /*Altura mínima*/
+    min-height: 500px;
+}
+.banner h2, .banner p {
+    color: darkorange;
+    line-height: 35px; /*Altura em cada linha*/
+}
+.banner .flex {
+    text-align: center;
+    padding-top: 130px;
+}
+.desktop {
+    display: none;
+}
+.btn {
+    background: darkorange;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*REGRAS PARA TAMANHO DE TELA DIFERENTES*/
+@media (min-width: 460px) { /*Quando a tela for menor que 460px*/
+
+    /*Esconder botão bamburguer*/
+    .header-menu {
+        display: none;
+    }
+
+    /*Mostrar o menu normal*/
+    .header .header-nav, .desktop {
+        display: block;
+    }
+
+    /*Jogar o menu para Direita*/
+    .header .header-nav {
+        float: right;
+        margin: 15px;
+    }
+
+    /*Aparecer um item ao lado do outro*/
+    .header .header-nav ul li {
+        display: inline-block;
+    }
+
+    .header .header-nav ul li a:hover{
+        color: #E99339;
+        transition: all 0.5s;
+    }
+    .flex {
+        text-align: left;
+        display: flex;
+        width: 1000px;
+        margin: auto;
+    }
+    .container {
+        width: 1000px;
+        margin: 50px auto;
+    }
 }
