@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Raleway, Arial;
     font-size: 16px;
+    padding-top: 100px;
 }
 header {
     width: 100%;
@@ -9,6 +10,8 @@ header {
     padding: 10px; /*Margem dentro*/
     box-sizing: border-box; /*Não ficar maior que a tela*/
     display: inline-block; /*Ficar no tamanho certo da tela*/
+    position: fixed; /*Fixar no cabeçalho ao topo*/
+    top: 0;
 }
 header nav { /*Formatar o menu*/
     float: right;
@@ -72,3 +75,61 @@ footer p {
     color: white;
     text-transform: uppercase;
 }
+footer a {
+    text-decoration: none;
+    margin: 25px;
+    background: white;
+    color: black;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px; /*Altura da linha, obriga a ficar ao centro*/
+    transition: all 0.5s;
+}
+footer a:hover {
+    background: black;
+    color: white;
+}
+.menu{
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+
+@media (max-width: 420px) {
+    .banner {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 100%;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header nav{
+        display: none;
+    }
+    header img {
+        width: 300px;
+    }
+    .menu {
+        display: block;
+        border: 1px solid #FFF;
+        padding: 10px 15px;
+        color: #FFF;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+} 

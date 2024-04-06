@@ -24,6 +24,10 @@
             <img src="imagens/logo.png" alt="Logo Home" title="Meu Carro Novinho">
         </a>
 
+        <a href="javascript:mostrarMenu()" class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
         <nav> <!--Começo Barra Navegação-->
             <ul>
                 <li>
@@ -48,6 +52,7 @@
                 </li>
             </ul>
         </nav> <!--Fim Barra Navegação-->
+
     </header>
 
     <div class="banner"> <!--Banner principal-->
@@ -91,7 +96,24 @@
 
     <footer>
         <p>Todos os Direitos Reservados! &copy;</p>
+        <p>
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </p>
     </footer>
+
+    <script>
+        function mostrarMenu() {
+            document.querySelector("header nav").classList.toggle("mostrar");
+        }
+    </script>
 </body>
 
 </html>
