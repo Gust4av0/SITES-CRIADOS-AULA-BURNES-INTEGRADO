@@ -32,6 +32,12 @@ body {
 .header .header-nav ul li {
     margin: 15px;
 }
+.img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #CCC;
+    margin: 20px 0;
+}
 .header .header-nav ul li a {
     text-decoration: none;
     color: #CCC;
@@ -68,10 +74,52 @@ body {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    padding-top: 10px;
+}
+.flex-carros, .flex-footer {
+    display: flex;
+    flex-wrap: wrap; /*Jogar coluna que não cabe para baixo*/
+    justify-content: center; /*Centralizar ao centro*/
+}
+.flex-carros .flex-col {
+    width: 90%;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 15px 0;
+}
+.flex-footer .flex-col {
+ width: 90%;
+ padding-top: 50px;
+}
+.flex-carros .flex-col p {
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+.flex-carros .flex-col img {
+    width: 80%;
+}
+.flex-footer .midias a {
+    text-decoration: none;
+    color: red;
+    line-height: 30px;
+    margin: 20px;
+    font-size: 20px;
 }
 /*REGRAS PARA TAMANHO DE TELA DIFERENTES*/
 @media (min-width: 460px) { /*Quando a tela for menor que 460px*/
 
+    .flex-footer .flex-col {
+        width: 50%;
+    }
+    .flex-carros .flex-col {
+        width: 22%;
+    }
     /*Esconder botão bamburguer*/
     .header-menu {
         display: none;
