@@ -1,0 +1,85 @@
+$primaria: #222;
+$secundaria: #CCC;
+$claro: #F00;
+$fonte1: Montserrat, Tahoma;
+$fonte2: Tahoma, Verdana;
+$margin: 10px;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px $fonte2;
+}
+
+h1 {
+    font: 24px $fonte1;
+    text-align: center;
+    font-weight: bold;
+    margin: $margin;
+}
+
+.header {
+    background-color: $primaria;
+    padding: $margin;
+
+    .header-logo img {
+        width: 350px;
+    }
+
+    .header-nav {
+        float: right;
+
+        ul {
+            list-style: none;
+            margin-top: $margin;
+
+            li {
+                display: inline-block;
+                margin: $margin;
+
+                a {
+                    color: $secundaria;
+                    text-decoration: none;
+                    font: 20px $fonte1;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $claro;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+.video{
+    video{
+        width: 100%;
+    }
+}
+.footer {
+    background-color: $primaria;
+    padding: $margin;
+    text-align: center;
+    color: $secundaria;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap; /*Ele quebrar as colunas e cair para baixo*/
+    justify-content: center; /*Deixar os elementos dentro do flex centralizado*/
+    .flex-coluna {
+        width: 28%;
+        margin: $margin;
+        padding: $margin;
+        box-shadow: 0 0 $margin $secundaria;
+        text-align: center;
+    }
+}
