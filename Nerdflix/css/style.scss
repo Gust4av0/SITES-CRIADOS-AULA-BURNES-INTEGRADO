@@ -1,0 +1,89 @@
+$primary: #991C39;
+$secondary: #F00;
+$clear: #FF0;
+$font: Arial, Verdana, Tahoma;
+$size: 18px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $size $font;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+    font-weight: bold;
+    .header-nav {
+        float: right;
+        ul {
+            list-style: none;
+            margin-top: 25px;
+            li {
+                display: inline-block;
+                a {
+                    margin: 30px;
+                    color: $clear;
+                    padding: 10px;
+                    background-color: $secondary;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: $primary;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner {
+    & &-img {
+        width: 100%;
+    }
+}
+.container {
+    width: 1000px;
+    margin: 20px auto;
+}
+.flex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; /*Centralizar os itens*/
+    & &-card {
+        width: 24%;
+        margin: 3px;
+        box-shadow: 0 0 10px #CCC;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & &-img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+}
+.btn {
+    text-decoration: none;
+    background-color: $secondary;
+    color: $clear;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+        background-color: $primary;
+    }
+}
+p {
+    margin: 15px;
+    line-height: 30px; /*Altura da linha*/
+}
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+}
